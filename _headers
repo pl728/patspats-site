@@ -1,0 +1,7 @@
+/skyswipe/oauth/client-metadata.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

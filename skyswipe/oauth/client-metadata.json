@@ -1,0 +1,19 @@
+{
+  "client_id": "https://patspats.xyz/skyswipe/oauth/client-metadata.json",
+  "application_type": "native",
+  "client_name": "SkySwipe",
+  "client_uri": "https://patspats.xyz/skyswipe/",
+  "dpop_bound_access_tokens": true,
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "redirect_uris": [
+    "xyz.patspats:/skyswipe/callback"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "scope": "atproto transition:generic transition:chat.bsky",
+  "token_endpoint_auth_method": "none"
+}

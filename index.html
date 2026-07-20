@@ -18,18 +18,17 @@
       body {
         min-height: 100vh;
         margin: 0;
-        background:
-          radial-gradient(circle at 78% 18%, rgba(71, 113, 255, 0.2), transparent 30rem),
-          linear-gradient(145deg, #0b0c10, #11141d);
+        background: #0b0c10;
       }
 
       main {
         display: flex;
-        width: min(72rem, calc(100% - 2.5rem));
+        width: min(68rem, calc(100% - 2.5rem));
         min-height: 100vh;
         margin: 0 auto;
-        padding: 3rem 0;
+        padding: 4rem 0;
         flex-direction: column;
+        justify-content: space-between;
       }
 
       nav {
@@ -47,23 +46,19 @@
 
       nav a:hover, footer a:hover { color: #ffffff; }
 
-      .hero { padding: clamp(6rem, 14vw, 10rem) 0; }
-
-      .eyebrow {
-        margin: 0 0 1rem;
-        color: #7da0ff;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
+      .nav-links {
+        display: flex;
+        gap: 1.25rem;
       }
+
+      section { padding: 5rem 0; }
 
       h1 {
         max-width: 13ch;
         margin: 0;
-        font-size: clamp(3.5rem, 11vw, 8rem);
-        line-height: 0.92;
-        letter-spacing: -0.07em;
+        font-size: clamp(3.5rem, 10vw, 7rem);
+        line-height: 0.95;
+        letter-spacing: -0.065em;
       }
 
       .intro {
@@ -74,104 +69,6 @@
         line-height: 1.65;
       }
 
-      .skyswipe-link {
-        display: inline-flex;
-        margin-top: 2rem;
-        padding: 0.8rem 1rem;
-        border: 1px solid #2d3342;
-        border-radius: 999px;
-        color: #f5f2e9;
-        text-decoration: none;
-      }
-
-      .skyswipe-link:hover { border-color: #7da0ff; }
-
-      .projects {
-        padding: 0 0 clamp(5rem, 10vw, 8rem);
-      }
-
-      .projects-heading {
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-        gap: 2rem;
-        padding-top: 2rem;
-        border-top: 1px solid #242936;
-      }
-
-      h2 {
-        margin: 0;
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        letter-spacing: -0.045em;
-      }
-
-      .projects-heading p {
-        max-width: 28rem;
-        margin: 0;
-        color: #747c8d;
-        line-height: 1.6;
-      }
-
-      .project-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-        margin-top: 2.5rem;
-      }
-
-      .project-card {
-        display: flex;
-        min-height: 15rem;
-        padding: 1.5rem;
-        border: 1px solid #2d3342;
-        border-radius: 1.25rem;
-        background: rgba(18, 21, 30, 0.72);
-        color: inherit;
-        flex-direction: column;
-        text-decoration: none;
-        transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
-      }
-
-      .project-card:hover {
-        border-color: #7da0ff;
-        background: rgba(25, 30, 44, 0.9);
-        transform: translateY(-3px);
-      }
-
-      .project-card--wide {
-        min-height: 13rem;
-        grid-column: 1 / -1;
-      }
-
-      .project-type {
-        color: #7da0ff;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .project-card h3 {
-        max-width: 16ch;
-        margin: 1.5rem 0 0;
-        font-size: clamp(1.4rem, 3vw, 2rem);
-        line-height: 1.1;
-        letter-spacing: -0.035em;
-      }
-
-      .project-card p {
-        max-width: 31rem;
-        margin: 1rem 0 2rem;
-        color: #aab1c1;
-        line-height: 1.55;
-      }
-
-      .project-arrow {
-        margin-top: auto;
-        color: #f5f2e9;
-        font-size: 1.2rem;
-      }
-
       a:focus-visible {
         outline: 3px solid #7da0ff;
         outline-offset: 4px;
@@ -180,34 +77,8 @@
       footer {
         display: flex;
         justify-content: space-between;
-        margin-top: auto;
-        padding-top: 1.5rem;
-        border-top: 1px solid #242936;
         color: #747c8d;
         font-size: 0.85rem;
-      }
-
-      @media (max-width: 42rem) {
-        main { padding-top: 2rem; }
-
-        .hero { padding: 6rem 0; }
-
-        .projects-heading {
-          align-items: start;
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        .project-grid { grid-template-columns: 1fr; }
-
-        .project-card,
-        .project-card--wide { min-height: 13rem; }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .project-card { transition: none; }
-
-        .project-card:hover { transform: none; }
       }
     </style>
   </head>
@@ -215,60 +86,17 @@
     <main>
       <nav>
         <span>Patrick Lin</span>
-        <a href="/skyswipe/">SkySwipe</a>
+        <div class="nav-links">
+          <a href="/learning/">Learning</a>
+          <a href="/skyswipe/">SkySwipe</a>
+        </div>
       </nav>
 
-      <section class="hero">
-        <p class="eyebrow">Personal site</p>
+      <section>
         <h1>Hi, I’m Patrick.</h1>
         <p class="intro">
-          This is my corner of the internet for software, experiments, and things I’m building.
+          Software, experiments, and things I’m curious about.
         </p>
-        <a class="skyswipe-link" href="/skyswipe/">Explore SkySwipe →</a>
-      </section>
-
-      <section class="projects" aria-labelledby="projects-title">
-        <div class="projects-heading">
-          <h2 id="projects-title">Selected projects</h2>
-          <p>Interactive guides, research collections, and learning tools built to make complicated subjects easier to explore.</p>
-        </div>
-
-        <div class="project-grid">
-          <a class="project-card" href="https://codeforces-1000-1600.patspats.chatgpt.site">
-            <span class="project-type">Programming guide</span>
-            <h3>Codeforces 1000–1600</h3>
-            <p>A Python textbook for progressing from Codeforces rating 1000 to 1600, with proofs, worked analyses, and practice problems.</p>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a class="project-card" href="https://intro-to-ai-systems-performance.patspats.chatgpt.site">
-            <span class="project-type">Technical textbook</span>
-            <h3>AI Systems Performance Engineering</h3>
-            <p>A rigorous guide to GPU architecture, kernels, ML compilers, distributed training, and production inference.</p>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a class="project-card" href="https://long-covid-record.patspats.chatgpt.site">
-            <span class="project-type">Research archive</span>
-            <h3>The Long COVID Record</h3>
-            <p>One hundred public voices, twenty-five influential papers, and a direct call to action.</p>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a class="project-card" href="https://nj-road-ready.patspats.chatgpt.site">
-            <span class="project-type">Practice tool</span>
-            <h3>NJ Road Ready</h3>
-            <p>Adaptive practice for the New Jersey MVC Class D knowledge test.</p>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-
-          <a class="project-card project-card--wide" href="https://software-engineering-2020-2026.patspats.chatgpt.site">
-            <span class="project-type">Software engineering textbook</span>
-            <h3>Software Engineering 2020–2026</h3>
-            <p>A research-grounded account of the trends, frontiers, innovations, and durable lessons that changed software engineering from 2020 through 2026.</p>
-            <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
       </section>
 
       <footer>

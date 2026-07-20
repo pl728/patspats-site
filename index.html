@@ -138,6 +138,11 @@
         transform: translateY(-3px);
       }
 
+      .project-card--wide {
+        min-height: 13rem;
+        grid-column: 1 / -1;
+      }
+
       .project-type {
         color: #7da0ff;
         font-size: 0.75rem;
@@ -195,7 +200,8 @@
 
         .project-grid { grid-template-columns: 1fr; }
 
-        .project-card { min-height: 13rem; }
+        .project-card,
+        .project-card--wide { min-height: 13rem; }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -253,6 +259,13 @@
             <span class="project-type">Practice tool</span>
             <h3>NJ Road Ready</h3>
             <p>Adaptive practice for the New Jersey MVC Class D knowledge test.</p>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="project-card project-card--wide" href="https://software-engineering-2020-2026.patspats.chatgpt.site">
+            <span class="project-type">Software engineering textbook</span>
+            <h3>Software Engineering 2020–2026</h3>
+            <p>A research-grounded account of the trends, frontiers, innovations, and durable lessons that changed software engineering from 2020 through 2026.</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </a>
         </div>

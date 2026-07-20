@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Learning — Patrick Lin</title>
-    <meta name="description" content="Websites and study materials Patrick Lin is currently working through.">
+    <title>Projects — Patrick Lin</title>
+    <meta name="description" content="Apps and software projects by Patrick Lin.">
     <style>
       :root {
         color-scheme: dark;
@@ -83,40 +83,32 @@
         line-height: 1.65;
       }
 
-      .study-list {
+      .project-list {
         max-width: 47rem;
         padding-bottom: 6rem;
-      }
-
-      .study-group {
-        padding: 2rem 0;
         border-top: 1px solid #2d3342;
-      }
-
-      h2 {
-        margin: 0 0 1rem;
-        color: #747c8d;
-        font-size: 0.8rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
       }
 
       ul {
         margin: 0;
-        padding-left: 1.25rem;
+        padding: 1.2rem 0 0 1.25rem;
       }
 
       li {
-        margin: 0.8rem 0;
+        margin: 1.5rem 0;
         padding-left: 0.35rem;
         color: #747c8d;
         line-height: 1.55;
       }
 
-      li a {
+      li > a,
+      .project-name {
         color: #f5f2e9;
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         font-weight: 650;
+      }
+
+      li > a {
         text-decoration-color: #46506a;
         text-decoration-thickness: 1px;
         text-underline-offset: 0.25em;
@@ -128,6 +120,14 @@
         display: block;
         margin-top: 0.25rem;
         color: #aab1c1;
+      }
+
+      .technical-link {
+        display: inline-block;
+        margin-top: 0.45rem;
+        color: #7d8baa;
+        font-size: 0.85rem;
+        text-underline-offset: 0.2em;
       }
 
       a:focus-visible {
@@ -155,65 +155,30 @@
       <nav>
         <a href="/">Patrick Lin</a>
         <div class="nav-links">
-          <a href="/projects/">Projects</a>
-          <a href="/learning/" aria-current="page">Learning</a>
+          <a href="/projects/" aria-current="page">Projects</a>
+          <a href="/learning/">Learning</a>
         </div>
       </nav>
 
       <header class="page-header">
-        <p class="eyebrow">Currently studying</p>
-        <h1>Learning now.</h1>
-        <p class="intro">
-          A running index of websites, study materials, and practice tools I’m working through.
-          I didn’t author these—I’m keeping them here as a record of what I’m learning.
-        </p>
+        <p class="eyebrow">Things I’m building</p>
+        <h1>Projects.</h1>
+        <p class="intro">Apps and software I’m working on.</p>
       </header>
 
-      <div class="study-list">
-        <section class="study-group" aria-labelledby="competitive-programming">
-          <h2 id="competitive-programming">Competitive programming</h2>
-          <ul>
-            <li>
-              <a href="https://codeforces-1000-1600.patspats.chatgpt.site">Codeforces 1000–1600 ↗</a>
-              <span class="note">Python, problem-solving patterns, proofs, and practice problems.</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="study-group" aria-labelledby="software-systems">
-          <h2 id="software-systems">Software and systems</h2>
-          <ul>
-            <li>
-              <a href="https://software-engineering-2020-2026.patspats.chatgpt.site">Software Engineering 2020–2026 ↗</a>
-              <span class="note">Recent changes in software engineering and the lessons that have lasted.</span>
-            </li>
-            <li>
-              <a href="https://intro-to-ai-systems-performance.patspats.chatgpt.site">Introduction to AI Systems Performance Engineering ↗</a>
-              <span class="note">GPU architecture, kernels, compilers, distributed training, and inference.</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="study-group" aria-labelledby="health-research">
-          <h2 id="health-research">Health research</h2>
-          <ul>
-            <li>
-              <a href="https://long-covid-record.patspats.chatgpt.site">The Long COVID Record ↗</a>
-              <span class="note">Public accounts, influential papers, and ongoing Long COVID research.</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="study-group" aria-labelledby="driving">
-          <h2 id="driving">Driving</h2>
-          <ul>
-            <li>
-              <a href="https://nj-road-ready.patspats.chatgpt.site">NJ Road Ready ↗</a>
-              <span class="note">Practice for the New Jersey MVC Class D knowledge test.</span>
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section class="project-list" aria-label="Project list">
+        <ul>
+          <li>
+            <a href="/skyswipe/">SkySwipe →</a>
+            <span class="note">A video-first client for Bluesky and the AT Protocol.</span>
+            <a class="technical-link" href="/skyswipe/oauth/client-metadata.json">OAuth client metadata (JSON)</a>
+          </li>
+          <li>
+            <span class="project-name">Tachie</span>
+            <span class="note">A heart-rate monitoring and energy-pacing companion for people with POTS and related conditions.</span>
+          </li>
+        </ul>
+      </section>
 
       <footer>
         <span>© 2026 Patrick Lin</span>

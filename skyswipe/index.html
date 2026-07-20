@@ -45,17 +45,37 @@
 
       a {
         display: inline-block;
-        margin-top: 2rem;
         color: #bec8df;
         text-decoration: none;
+      }
+
+      a:hover { color: #ffffff; }
+
+      .links {
+        display: flex;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        color: #66728a;
+        font-size: 0.9rem;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #8aabff;
+        outline-offset: 4px;
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>SkySwipe</h1>
-      <p>A video-first client for Bluesky and the AT Protocol.</p>
-      <a href="/">← Patrick Lin</a>
-    </main>
+      <main>
+        <h1>SkySwipe</h1>
+        <p>A video-first client for Bluesky and the AT Protocol.</p>
+        <div class="links">
+          <a href="/projects/">Projects</a>
+          <span aria-hidden="true">·</span>
+          <a href="/skyswipe/oauth/client-metadata.json">OAuth metadata</a>
+        </div>
+      </main>
   </body>
 </html>

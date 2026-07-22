@@ -7,7 +7,7 @@ Static source for Patrick Lin's personal site and SkySwipe's AT Protocol OAuth m
 - `/` — personal homepage
 - `/projects/` — apps and software projects
 - `/learning/` — current study materials and learning links
-- `/files/mastering-java-chapter-1.pdf` — Mastering Java Chapter 1 reader edition
+- `/files/mastering-java-chapter-1.pdf` — Mastering Java reader edition, currently Chapters 1–2
 - `/files/mastering-javascript-and-typescript.pdf` — Mastering JavaScript and TypeScript reader edition
 - `/skyswipe/` — SkySwipe landing page
 - `/skyswipe/oauth/client-metadata.json` — SkySwipe native OAuth client metadata

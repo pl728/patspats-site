@@ -105,13 +105,7 @@
         letter-spacing: -0.04em;
       }
 
-      h3 {
-        margin: 2rem 0 0.6rem;
-        font-size: 1.05rem;
-        line-height: 1.35;
-      }
-
-      p, li, dd {
+      p {
         color: #aab1c1;
         font-size: 1rem;
         line-height: 1.75;
@@ -120,40 +114,6 @@
       p { margin: 0.9rem 0; }
 
       strong { color: #f5f2e9; }
-
-      ul, ol {
-        margin: 1rem 0;
-        padding-left: 1.35rem;
-      }
-
-      li { margin: 0.65rem 0; }
-
-      li::marker { color: #7da0ff; }
-
-      dl { margin: 1.5rem 0 0; }
-
-      dt {
-        margin-top: 1.1rem;
-        color: #f5f2e9;
-        font-weight: 700;
-      }
-
-      dd { margin: 0.2rem 0 0; }
-
-      .example {
-        margin: 2rem 0 0;
-        padding: 1.5rem;
-        border: 1px solid #2d3342;
-        border-radius: 0.8rem;
-        background: rgba(18, 21, 30, 0.72);
-      }
-
-      .example h3 { margin-top: 0; }
-
-      .example-passage {
-        color: #d7dbe5;
-        font-style: italic;
-      }
 
       .back-link {
         display: inline-block;
@@ -186,8 +146,6 @@
         .page-header { padding-top: 5rem; }
 
         article section { padding: 2.5rem 0; }
-
-        .example { padding: 1.2rem; }
       }
     </style>
   </head>
@@ -205,199 +163,111 @@
         <p class="eyebrow">Learning methodology</p>
         <h1>How Patrick learns.</h1>
         <p class="lede">
-          This is a method for learning difficult subjects without lowering the level of the material.
-          The source stays precise and demanding; explanations expand only where understanding actually breaks.
+          Patrick keeps the main material focused, compressed, and technically mature.
+          Personalized explanation lives in appendices, created only when a specific gap appears.
         </p>
       </header>
 
       <article>
-        <p class="principle">Keep the destination advanced. Personalize the route used to reach it.</p>
+        <p class="principle">Keep the canonical text compressed. Put personal unwrapping in appendices.</p>
 
         <section>
-          <h2>The problem this method is trying to solve</h2>
+          <h2>A two-layer learning system</h2>
           <p>
-            Dense technical material creates a familiar dilemma. One response is to simplify the entire subject until it feels smooth.
-            That makes reading easier, but it can erase the distinctions, mechanisms, and limits that matter in real work.
-            Another response is to explain every prerequisite inside every chapter. That preserves detail, but the main argument disappears beneath layers of background material.
+            Patrick’s methodology separates learning material into two layers. The first is the <strong>canonical text</strong>:
+            the main book, chapter, or set of notes that carries the subject. It stays concise and demanding so the central argument remains visible.
+            It contains the claims, definitions, mechanisms, relationships, boundaries, and examples needed to build an expert model of the topic.
           </p>
           <p>
-            Patrick’s method avoids both extremes. It keeps a <strong>canonical source</strong>: the main textbook, chapter, or set of notes at the highest useful level.
-            That source should be compressed, but not vague. It should contain the central claims, essential definitions, reasoning, relationships, boundaries, and a few high-information examples.
+            The second layer is a set of <strong>personalized appendices</strong>. These are not general expansions of every prerequisite.
+            Each appendix exists because Patrick encountered a particular point of friction: an unfamiliar term, a missing relationship, a wrong prediction,
+            unclear notation, or confusion about where a guarantee comes from.
           </p>
           <p>
-            When something does not make sense, the whole source is not rewritten. Instead, the learner identifies the smallest missing piece and creates a focused explanation for that gap.
-            Once the gap is repaired, the learner returns to the original material. The standard stays high while the support becomes personal.
+            This separation prevents two common failures. Globally simplifying a subject can lower the target and erase important distinctions.
+            Expanding every prerequisite inline can make a chapter so large that its purpose disappears. The two-layer system keeps the destination advanced while adapting the route to the learner.
           </p>
         </section>
 
         <section>
-          <h2>Begin with a map, not a pile of chapters</h2>
+          <h2>The canonical text stays focused</h2>
           <p>
-            Before studying details, Patrick builds a macro-roadmap of the subject. The goal is not to know everything in advance.
-            It is to see what the major regions are, which ideas depend on others, where learners usually fail, and what kinds of performance should be possible at the end.
+            Before studying individual chapters, Patrick starts with a high-level map of the subject. The map identifies foundational ideas,
+            important dependencies, recurring failure modes, useful connections, and the larger capabilities the material should eventually support.
+            This gives each chapter a clear role in the whole.
           </p>
-          <p>The roadmap distinguishes four kinds of learning units:</p>
-          <dl>
-            <dt>Acquisition</dt>
-            <dd>A new concept, technique, or local mental model is introduced.</dd>
-
-            <dt>Integration</dt>
-            <dd>Earlier ideas are connected explicitly, so the learner understands how they constrain or support one another.</dd>
-
-            <dt>Emergent capability</dt>
-            <dd>Several connected ideas make a new kind of reasoning or performance possible.</dd>
-
-            <dt>Synthesis</dt>
-            <dd>A project, proof, diagnosis, design, or presentation requires the whole cluster to work together.</dd>
-          </dl>
           <p>
-            Not every possible connection deserves its own lesson. The roadmap prioritizes relationships that are frequently used, commonly misunderstood, necessary for later work, or valuable in unfamiliar situations.
+            Within that structure, the canonical text is compressed by removing repetition, filler, low-value examples, and prerequisite review that not every reader needs.
+            It is not compressed by deleting the reasoning that connects one claim to the next. The prose should require careful reading, but it should never require guessing what the author meant.
+          </p>
+          <p>
+            Because the main text does not absorb every personalized explanation, it remains coherent across repeated study sessions.
+            Patrick can return to the same high-level structure after each repair instead of navigating an increasingly bloated version of the chapter.
           </p>
         </section>
 
         <section>
-          <h2>What a study session looks like</h2>
-
-          <h3>1. Study one compressed unit slowly</h3>
+          <h2>Appendices personalize the difficult parts</h2>
           <p>
-            Dense writing cannot be skimmed like a feed. Patrick slows down enough to parse each sentence and often reads difficult passages aloud.
-            Reading aloud is not a memorization trick; it is a speed limiter and a syntax debugger. After a paragraph, he pauses and states what new claim or relationship it added.
+            When Patrick reaches a sentence or task that does not resolve, he first identifies the smallest blocking issue.
+            The response is a focused appendix attached to that point in the material. It explains the missing prerequisite or distinction,
+            gives one useful example or counterexample, and then returns directly to the original passage.
           </p>
-
-          <h3>2. Predict before the answer is revealed</h3>
           <p>
-            Before running code, reading the next proof step, or revealing a system’s response, he predicts what should happen and why.
-            A prediction exposes the learner’s current model. A wrong prediction is useful because it shows exactly where that model differs from reality.
+            A good appendix is intentionally narrow. It records what failed, supplies only the explanation needed to repair that failure,
+            and ends with a closed-book reconstruction or application. If Patrick misunderstood the difference between a value and a reference,
+            the appendix explains that distinction; it does not rewrite the entire programming-language chapter at an easier level.
           </p>
-
-          <h3>3. Mark the exact point of friction</h3>
           <p>
-            “I don’t understand this chapter” is too broad to repair. Patrick asks what specifically failed: an unknown term, an unstable definition, a missing relationship, unfamiliar notation, a procedural gap, or confusion about which layer provides a guarantee.
-          </p>
-
-          <h3>4. Unwrap only that blocker</h3>
-          <p>
-            The repair supplies the minimum prerequisite explanation needed, one useful example or counterexample, and a route back to the original passage.
-            Durable repairs can be saved separately, but they do not inflate the canonical source for every future reader.
-          </p>
-
-          <h3>5. Close the source and reconstruct</h3>
-          <p>
-            Patrick then hides the material and writes what he can recover: the central claim, definitions, mechanism, important relationships, boundaries, and examples.
-            The goal is not to reproduce the author’s wording. It is to preserve the meaning and structure without prompts.
-          </p>
-
-          <h3>6. Compare, repair, and reconstruct again</h3>
-          <p>
-            He compares the reconstruction with the source, identifies specific errors, studies only those errors, and tries again from memory.
-            Looking at the correction is not the final step; producing the corrected model without looking is.
-          </p>
-
-          <h3>7. Use the knowledge independently</h3>
-          <p>
-            Each unit ends with an output suited to the subject: an implementation, proof, solved problem, experiment, diagnosis, critique, or design.
-            This separates material that merely feels familiar from knowledge that can guide action.
+            Over time, these appendices form a personalized support layer around the canonical book. Another learner may need a different set because their prior knowledge and failure points are different.
+            The canonical text remains shared and stable; the appendices capture the individual path through it.
           </p>
         </section>
 
         <section>
-          <h2>A small example of targeted unwrapping</h2>
-          <div class="example">
-            <h3>Suppose the canonical text says:</h3>
-            <p class="example-passage">“An HTTP method is idempotent when repeating the same request has the same intended effect on the server as making it once.”</p>
-
-            <h3>The learner’s failure</h3>
-            <p>The sentence sounds clear, but the learner predicts that an idempotent request must return the same response every time.</p>
-
-            <h3>The minimal repair</h3>
-            <p>
-              The missing distinction is between <strong>effect</strong> and <strong>response</strong>. Repeating a DELETE request may leave the resource deleted each time even if the first response says “deleted” and a later response says “not found.”
-              The server state reaches the same intended result; the response does not have to be identical.
-            </p>
-
-            <h3>Return to the original</h3>
-            <p>
-              The learner restates the definition, explains why identical responses are not required, and classifies a new retry scenario without notes.
-              The chapter remains compressed. Only the demonstrated gap receives expansion.
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Understanding is a ladder</h2>
+          <h2>Learning requires output</h2>
           <p>
-            Material is not considered learned simply because it makes sense while visible. Patrick tests progressively stronger capabilities:
+            Patrick reads dense units slowly enough to parse their structure, often using reading aloud as a speed limit.
+            Before revealing an outcome, he predicts what code, a proof, or a system should do. When a prediction fails, it provides evidence for the next appendix.
           </p>
-          <dl>
-            <dt>Exposure</dt>
-            <dd>The material is understandable while it is in front of you.</dd>
-
-            <dt>Recognition</dt>
-            <dd>You identify the right concept when the prompt contains helpful cues.</dd>
-
-            <dt>Reconstruction</dt>
-            <dd>You reproduce the central structure from a sparse prompt.</dd>
-
-            <dt>Derivation</dt>
-            <dd>You rebuild why the result follows instead of recalling only the conclusion.</dd>
-
-            <dt>Execution</dt>
-            <dd>You can reliably perform the technique, implement the idea, or complete the procedure.</dd>
-
-            <dt>Transfer</dt>
-            <dd>You adapt the model to an unfamiliar case where the surface details have changed.</dd>
-
-            <dt>Articulation</dt>
-            <dd>You explain the mechanism, assumptions, boundaries, invalid uses, and relationships to nearby ideas.</dd>
-          </dl>
           <p>
-            A chapter may feel clear at the first level and still fail at every later one. The method is designed to reveal that difference early.
+            After reading, he hides the source and reconstructs the central claim, definitions, mechanism, relationships, and boundaries in his own words.
+            He compares that reconstruction with the reference, repairs specific errors, and reconstructs again without looking.
+            The aim is semantic preservation rather than wording similarity.
+          </p>
+          <p>
+            A unit also produces an independent result: an implementation, solved problem, proof, diagnosis, design, or explanation.
+            Material is not considered mastered because it felt clear while visible. Patrick wants to be able to rebuild the reasoning,
+            use it in practice, adapt it to an unfamiliar case, and explain where it stops applying.
           </p>
         </section>
 
         <section>
-          <h2>Presentation and AI feedback</h2>
+          <h2>AI supports the loop without replacing it</h2>
           <p>
-            After working through a unit, Patrick prepares notes in his own words and gives a recorded explanation.
-            A structured portion covers the central model, a derivation, a prediction, a boundary, a common false model, and a connection to earlier material.
-            A freer portion tests whether he can move through the subject without following the source’s order.
+            AI helps generate a targeted appendix after Patrick has identified a concrete failure. It can also compare his notes,
+            presentation, proof, or implementation against the canonical reference and diagnose missing concepts, weak relationships,
+            boundary errors, procedural gaps, or unjustified confidence.
           </p>
           <p>
-            AI is used here as a diagnostic evaluator, not as a substitute for learning. It compares the presentation, notes, implementation, or proof with the reference material and looks for missing concepts, missing relationships, incorrect claims, boundary errors, procedural weaknesses, and false confidence.
+            The useful result is a repair plan, not a score and not another general summary. Patrick hides the feedback and explains the corrected material again.
+            The AI supplies diagnosis and tailored support; the learner still performs the reconstruction and application.
           </p>
           <p>
-            The desired output is a repair plan rather than a score. Patrick studies that feedback, hides it, and explains the corrected material again.
-            The final act remains a learner-produced reconstruction.
-          </p>
-        </section>
-
-        <section>
-          <h2>Return after the feeling of fluency fades</h2>
-          <p>
-            At the beginning of a later session, Patrick reconstructs the previous material without notes. After a longer delay, he tests it through a new problem, a comparison with another topic, an implementation variation, or an unfamiliar failure case.
-          </p>
-          <p>
-            This matters because immediate recall can be supported by short-term familiarity. Delayed retrieval shows whether the knowledge remains available after the original wording and context are gone.
+            Later sessions begin by retrieving earlier material without notes and applying it in a changed context.
+            This delayed return distinguishes knowledge that remains usable from fluency that existed only while the chapter was fresh.
           </p>
         </section>
 
         <section>
-          <h2>The method in one cycle</h2>
-          <ol>
-            <li>Map the subject and its important dependencies.</li>
-            <li>Study one precise, compressed unit.</li>
-            <li>Read slowly and predict before outcomes are revealed.</li>
-            <li>Identify the smallest point where understanding fails.</li>
-            <li>Create a targeted repair and return to the original material.</li>
-            <li>Close the source and reconstruct the model in your own words.</li>
-            <li>Compare, repair specific errors, and reconstruct again.</li>
-            <li>Complete an independent application, proof, or implementation.</li>
-            <li>Present the material and use AI to diagnose gaps.</li>
-            <li>Retrieve and apply it again after a delay.</li>
-          </ol>
+          <h2>The point of the method</h2>
           <p>
-            This is Patrick’s personal learning methodology, not a rule that everyone must follow unchanged.
-            Its central commitment is simple: preserve the depth of the subject, and make the support responsive to evidence about what the learner actually needs.
+            The method is designed to preserve a high intellectual target without pretending that every learner reaches it through the same route.
+            The canonical material remains compact enough to expose the real structure of the subject. Personalized appendices make that structure reachable by responding to demonstrated gaps rather than imagined ones.
+          </p>
+          <p>
+            In practice, Patrick moves repeatedly between the two layers: study the canonical text, notice a precise failure, use an appendix to repair it,
+            return to the canonical argument, and prove understanding through reconstruction and use. The main book stays focused; the personal learning path grows around it.
           </p>
 
           <a class="back-link" href="/learning/">← Back to Learning</a>
